@@ -1,0 +1,15 @@
+.container {
+    max-width: 980px;
+    background-color: #050d16;
+
+}
+
+* {
+    font-family: 'Roboto',
+        'Montserrat',
+        sans-serif;
+    margin: 0 auto;
+}
+
+@import 'libs/_font';
+@import 'blocks/_header';

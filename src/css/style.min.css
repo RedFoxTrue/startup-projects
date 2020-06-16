@@ -1,0 +1,35 @@
+.container {
+  max-width: 980px;
+  background-color: #050d16;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-display: swap;
+  src: local("Roboto Black"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  font-display: swap;
+  src: local("MuseoSansCyrl-300"), url("../fonts/Roboto-BlackItalic.woff") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-display: swap;
+  src: local("MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.min.css.map */

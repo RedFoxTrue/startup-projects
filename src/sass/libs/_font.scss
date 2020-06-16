@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    src: local('Montserrat'),
+        url('../fonts/montserrat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    src: local('Montserrat Bold'),
+        url('../fonts/montserratbold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    font-display: swap;
+    src: local('Roboto-Black'),
+        url('../fonts/Roboto-Black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black Italic';
+    font-display: swap;
+    src: local('Roboto-Black Italic'),
+        url('../fonts/Roboto-BlackItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
