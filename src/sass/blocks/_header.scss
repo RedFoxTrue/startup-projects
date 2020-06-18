@@ -1,51 +1,81 @@
 .promo {
-    width: 100%;
+    //   width: 100%;
     height: 770px;
+    padding: 40px 230px;
     background: url("../img/main.jpg") center (center/cover) no-repeat;
     position: relative;
 }
 
 .promo:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
-header {
-    padding: 40px 230px;
+.header {
     position: relative;
     z-index: 3;
 
     .menu {
+        align-items: center;
+        justify-content: space-between;
         display: flex;
+
         &__list {
             margin-top: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-            li {
-                list-style-type: none;
-            }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-left: 50px;
+        }
+
+        .logo {
             a {
-                text-decoration: none;
-                color: #ffffff;
-                font-family: Montserrat;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 24px;
-                margin-left: 50px;
-            }
-            .logo {
-                a { 
-                    font-size: 24px;
-                    font-weight: 700;
-                }
+                font-size: 24px;
+                font-weight: 700;
             }
         }
     }
+
+    &__wrap {
+        padding: 258px 230px;
+
+        h1 {
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 48px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        p {
+            color: #ffffff;
+            font-family: "Roboto Slab";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 34px;
+        }
+    }
+}

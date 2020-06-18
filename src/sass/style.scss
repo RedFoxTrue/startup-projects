@@ -9,7 +9,12 @@
         'Montserrat',
         sans-serif;
     margin: 0 auto;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 @import 'libs/_font';
 @import 'blocks/_header';
+@import 'blocks/_buttons'
