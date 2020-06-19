@@ -1,17 +1,20 @@
 .button {
-    width: 150px;
-    height: 30px;
-    border: 2px #ffffff;
-    font-size: 12px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    font-family: 'Montserrat';
+    font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
+
 
     &_main {
         display: block;
         margin: 50px auto;
-        width: 300px;
+        width: 180px;
         height: 50px;
         font-size: 16px;
+        color: #ffffff;
     }
 
     &_submit {

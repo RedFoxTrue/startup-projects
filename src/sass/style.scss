@@ -1,7 +1,7 @@
 .container {
-    max-width: 980px;
-    background-color: #050d16;
-
+    max-width: 1150px;
+    padding: 100px 0 100px 0;
+    margin: 0 auto;
 }
 
 * {
@@ -15,6 +15,8 @@
     }
 }
 
+@import 'base/_variables';
 @import 'libs/_font';
 @import 'blocks/_header';
-@import 'blocks/_buttons'
+@import 'blocks/_buttons';
+@import 'blocks/_services';
