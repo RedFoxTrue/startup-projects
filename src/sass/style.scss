@@ -1,3 +1,7 @@
+body {
+    margin: 0 auto;
+}
+
 .container {
     max-width: 1150px;
     padding: 100px 0 100px 0;
@@ -8,8 +12,6 @@
     font-family: 'Roboto',
         'Montserrat',
         sans-serif;
-    margin: 0 auto;
-
     a {
         text-decoration: none;
     }
@@ -20,3 +22,7 @@
 @import 'blocks/_header';
 @import 'blocks/_buttons';
 @import 'blocks/_services';
+@import 'blocks/_teams';
+@import 'blocks/_latest';
+@import 'blocks/_touch';
+@import 'blocks/_blog';
