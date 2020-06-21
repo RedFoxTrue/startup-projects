@@ -1,14 +1,28 @@
- 
-.teams__descr{
+.teams {
+    &__descr {
         display: flex;
         margin-top: 70px;
+
         p {
+            display: block;
+            margin: 16px;
+            color: $main-color;
+            font-family: "Roboto Slab";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    &__carousel {
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {}
+    }
+
+    &__round {
         display: block;
-        margin: 16px;
-        color: $main-color;
-        font-family: "Roboto Slab";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
     }
 }
