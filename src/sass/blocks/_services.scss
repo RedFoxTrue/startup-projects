@@ -5,6 +5,12 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+
+    &__contacts {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: start;
+    }
 }
 
 hr {

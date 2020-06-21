@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto',
         'Montserrat',
         sans-serif;
+
     a {
         text-decoration: none;
     }
@@ -26,3 +27,4 @@ body {
 @import 'blocks/_latest';
 @import 'blocks/_touch';
 @import 'blocks/_blog';
+@import 'blocks/_feedback';
