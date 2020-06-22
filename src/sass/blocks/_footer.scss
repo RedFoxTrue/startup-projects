@@ -1,0 +1,20 @@
+.footer {
+    margin: 0 auto;
+    background-color: $second-color;
+
+    &__info {
+        margin: 0 auto;
+
+        &__social {
+            // justify-content: center;
+            display: flex;
+
+            &__round {
+                width: 35px;
+                height: 35px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+            }
+        }
+    }
+}
