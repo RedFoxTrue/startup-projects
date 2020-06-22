@@ -3,11 +3,15 @@
     background-color: $second-color;
 
     &__info {
+        width: 350px;
         margin: 0 auto;
 
         &__social {
-            // justify-content: center;
+            width: 200px;
+            margin: 0 auto;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             &__round {
                 width: 35px;
@@ -16,5 +20,9 @@
                 border-radius: 50%;
             }
         }
+    }
+
+    hr {
+        color: #ffffff;
     }
 }
