@@ -1,20 +1,54 @@
-const gulp = require("gulp");
-const browserSync = require("browser-sync");
-const sass = require("gulp-sass");
-const cleanCSS = require("gulp-clean-css");
-const autoprefixer = require("gulp-autoprefixer");
-const rename = require("gulp-rename");
-const imagemin = require("gulp-imagemin");
-const htmlmin = require("gulp-htmlmin");
-const uglify = require('gulp-uglify');
+var gulp = require("gulp");
+var browserSync = require("browser-sync");
+var sass = require("gulp-sass");
+var cleanCSS = require("gulp-clean-css");
+var autoprefixer = require("gulp-autoprefixer");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var htmlmin = require("gulp-htmlmin");
+// var uglify = require("gulp-uglify");
+// var watchOver = require("gulp-watch");
+// var rigger = require("gulp-rigger");
+// var reload = browserSync.reload;
+// var sourcemaps = require('gulp-sourcemaps');
+
+// var path = {
+//   build: {
+//     //Тут мы укажем куда складывать готовые после сборки файлы
+//     js: "dist/js/",
+//   },
+//   src: {
+//     //Пути откуда брать исходники
+//     js: "src/js/main.js", //В стилях и скриптах нам понадобятся только main файлы
+//   },
+//   watch: {
+//     //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+//     js: "src/js/**/*.js",
+//   },
+//   clean: "./build",
+// };
+// gulp.task("js:build", function () {
+//   return gulp
+//     .src(path.src.js) //Найдем наш main файл
+//     .pipe(rigger()) //Прогоним через rigger
+//     .pipe(sourcemaps.init()) //Инициализируем sourcemap
+//     .pipe(uglify()) //Сожмем наш js
+//     .pipe(sourcemaps.write()) //Пропишем карты
+//     .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
+//     .pipe(
+//       reload({
+//         stream: true,
+//       })
+//     ); //И перезагрузим сервер
+// });
 
 gulp.task("server", function () {
   browserSync({
     server: {
       baseDir: "dist",
     },
-    browser: 'firefox',
-    notify: false
+    browser: "firefox",
+    notify: false,
   });
 
   gulp.watch("src/*.html").on("change", browserSync.reload);
@@ -24,17 +58,23 @@ gulp.task("server", function () {
 gulp.task("styles", function () {
   return gulp
     .src("src/sass/**/*.+(scss|sass)")
-    .pipe(sass({
-      outputStyle: "compressed"
-    }).on("error", sass.logError))
-    .pipe(rename({
-      suffix: ".min",
-      prefix: ""
-    }))
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+      }).on("error", sass.logError)
+    )
+    .pipe(
+      rename({
+        suffix: ".min",
+        prefix: "",
+      })
+    )
     .pipe(autoprefixer())
-    .pipe(cleanCSS({
-      compatibility: "ie8"
-    }))
+    .pipe(
+      cleanCSS({
+        compatibility: "ie8",
+      })
+    )
     .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
 });
@@ -48,9 +88,11 @@ gulp.task("watch", function () {
 gulp.task("html", function () {
   return gulp
     .src("src/*.html")
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+      })
+    )
     .pipe(gulp.dest("dist/"));
 });
 
@@ -86,5 +128,8 @@ gulp.task(
     "mailer",
     "html",
     "images"
+    // "js:build"
   )
 );
+
+// сборка для минификации https://habr.com/ru/post/250569/
