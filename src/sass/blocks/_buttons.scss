@@ -19,6 +19,7 @@
 
     &_touch {
         margin: 53px auto;
+        font-family: "Roboto Slab";
         width: 180px;
         height: 50px;
         border-radius: 2px;
@@ -31,4 +32,9 @@
         height: 40px;
         font-size: 14px;
     }
+}
+
+.button_touch:hover {
+    background-color: #ffffff;
+    color: $second-color;
 }

@@ -18,6 +18,16 @@
                 height: 35px;
                 border: 2px solid #ffffff;
                 border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: block;
+                    transform: translateY(10%);
+                    text-decoration: none;
+                    color: #ffffff;
+                }
             }
         }
     }

@@ -21,10 +21,11 @@ $(document).ready(function () {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     autoplay: true,
+                    arrows: false,
                     autoplaySpeed: 2000,
                     slidesToScroll: 2,
                 },

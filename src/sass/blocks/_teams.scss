@@ -1,4 +1,6 @@
 .teams {
+    background: #f8f8f8;
+
     &__descr {
         display: flex;
         margin-top: 70px;
@@ -54,8 +56,9 @@
             align-items: center;
             width: 28px;
             height: 28px;
-            
+
             a {
+                margin-top: 4px;
                 text-decoration: none;
                 color: #ffffff;
             }
