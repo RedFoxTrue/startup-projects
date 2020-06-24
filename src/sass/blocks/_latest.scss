@@ -1,4 +1,8 @@
 .latest {
+    .container {
+        padding-bottom: 0px;
+    }
+
     &__tabs {
         display: flex;
         justify-content: center;
@@ -31,12 +35,26 @@
     &__content {
         margin-top: 70px;
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item {
+        max-width: 33.333%;
+        margin-bottom: 30px;
     }
 
     &-item__img {
         position: relative;
         width: 360px;
         height: 320px;
+
+        img {
+            width: 360px;
+            height: 320px;
+        }
 
         &__hover {
             position: absolute;
