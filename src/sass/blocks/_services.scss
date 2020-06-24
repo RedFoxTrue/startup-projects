@@ -17,6 +17,15 @@
         font-weight: 400;
         margin-top: 20px;
     }
+
+    &__latest__item {
+        margin-top: 30%;
+        color: #ffffff;
+        font-family: Montserrat;
+        text-transform: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
 }
 
 hr {
@@ -44,6 +53,11 @@ hr {
         font-size: 13px;
         font-weight: 400;
         margin-top: 15px;
+    }
+
+    &__latest__item {
+        margin-top: 16px;
+        color: #ffffff;
     }
 }
 

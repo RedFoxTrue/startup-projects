@@ -8,6 +8,7 @@
     text-transform: uppercase;
     display: block;
     color: #ffffff;
+    cursor: pointer;
 
 
     &_main {
@@ -28,9 +29,13 @@
     }
 
     &_mini {
-        width: 131px;
-        height: 40px;
-        font-size: 14px;
+        margin: 25px auto;
+        width: 100px;
+        height: 38px;
+        background-color: #ffffff;
+        color: $second-color;
+        text-align: center;
+        line-height: 38px;
     }
 }
 

@@ -57,6 +57,16 @@
             width: 28px;
             height: 28px;
 
+            &:hover {
+                background-color: $second-color;
+                opacity: 1;
+                -webkit-transition: All 0.5s ease;
+                -moz-transition: All 0.5s ease;
+                -o-transition: All 0.5s ease;
+                -ms-transition: All 0.5s ease;
+                transition: All 0.5s ease;
+            }
+
             a {
                 margin-top: 4px;
                 text-decoration: none;
@@ -65,18 +75,13 @@
         }
     }
 
-    .teams__social__round:hover {
-        background-color: $second-color;
-        opacity: 1;
+    .teams__round:hover .teams__round__hover {
+        display: block;
         -webkit-transition: All 0.5s ease;
         -moz-transition: All 0.5s ease;
         -o-transition: All 0.5s ease;
         -ms-transition: All 0.5s ease;
         transition: All 0.5s ease;
-    }
-
-    .teams__round:hover .teams__round__hover {
-        display: block;
     }
 
     .slick-prev,
