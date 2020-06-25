@@ -44,4 +44,10 @@ $(document).ready(function () {
             // instead of a settings object
         ],
     });
+
+    $('ul.latest__tabs').on('click', 'li:not(.latest__tab_active)', function () {
+        $(this)
+            .addClass('latest__tab_active').siblings().removeClass('latest__tab_active')
+            .closest('div.container').find('div.latest__content').removeClass('latest__content_active').eq($(this).index()).addClass('latest__content_active');
+    });
 });

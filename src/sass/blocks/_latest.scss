@@ -1,7 +1,4 @@
 .latest {
-    .container {
-        padding-bottom: 0px;
-    }
 
     &__tabs {
         display: flex;
@@ -39,6 +36,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        display: none;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
