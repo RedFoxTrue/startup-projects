@@ -1,0 +1,50 @@
+.clients {
+    &__carousel__item {
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__round {
+        margin: 0 30px;
+    }
+
+    &__quote {
+        margin-top: 68px;
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__name {
+        margin-top: 40px;
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    &__dot {
+        display: flex;
+        width: 13px;
+        height: 13px;
+        margin: 0 3px;
+        border-radius: 50%;
+        background-color: $main-color;
+        cursor: pointer;
+
+        &_active {
+            background-color: $second-color;
+        }
+    }
+}
