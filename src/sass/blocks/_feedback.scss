@@ -17,7 +17,6 @@
     &__tip__wrapper {
         margin-top: 10px;
         display: flex;
-        flex-wrap: wrap;
     }
 
     &__tip {
@@ -25,11 +24,23 @@
         color: #555555;
         font-family: "Roboto Slab";
         margin: 3px 3px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 400;
+
+        &__tell {
+            margin-top: 10px;
+        }
+
+        &__mail {
+            display: block;
+            margin-top: 10px;
+        }
     }
 
     &__contacts {
+        min-width: 260px;
+        ;
+
         :nth-last-child(1) {
             margin-bottom: 0px;
         }
@@ -38,7 +49,7 @@
     &__data {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: end;
 
         :nth-last-child(4) {
             margin-bottom: 0px;
@@ -51,9 +62,9 @@
         }
 
         &_item {
-            width: 350px;
+            width: 45%;
             height: 44px;
-            border: 1px solid #555555;
+            border: 1px solid $main-color;
             margin-right: 26px;
             margin-bottom: 21px;
         }
@@ -66,7 +77,7 @@
     }
 
     &__message {
-        width: 730px;
+        width: calc(100% - 60px);
         height: 104px;
         border: 1px solid #555555;
     }
