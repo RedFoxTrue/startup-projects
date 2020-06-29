@@ -1,5 +1,6 @@
 .feedback {
     &__wrapper {
+        padding-left: 30px;
         margin-top: 70px;
         display: flex;
         justify-content: space-between;
@@ -46,45 +47,123 @@
         }
     }
 
-    &__data {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
+    &__form {
+        padding: 0 10px 10px 100px;
+    }
 
-        :nth-last-child(4) {
-            margin-bottom: 0px;
+    &__data {
+        float: left;
+
+        :nth-child(2) {
             margin-right: 0px;
         }
 
-        :nth-last-child(2) {
-            margin-bottom: 0px;
+        :nth-child(4) {
             margin-right: 0px;
         }
 
         &_item {
-            width: 45%;
+            display: flex;
+            width: 350px;
             height: 44px;
-            border: 1px solid $main-color;
-            margin-right: 26px;
+            border: 1px solid #555555;
             margin-bottom: 21px;
+            margin-right: 30px;
+            padding-left: 7px;
+            float: left;
+            color: #555555;
+            font-family: "Roboto Slab";
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-transform: uppercase;
+
+            &:hover {
+                border: 1px solid $second-color;
+            }
         }
     }
 
-    &__form {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     &__message {
-        width: calc(100% - 60px);
+        resize: none;
+        width: 739px;
         height: 104px;
         border: 1px solid #555555;
+        padding: 7px 0 0 7px;
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        &:hover {
+            border: 1px solid $second-color;
+        }
     }
 
     &__send {
-        width: 100%;
         display: flex;
-        justify-content: start;
+        float: left;
+        margin-top: 21px;
     }
+
+    &__descr {
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        line-height: 44px;
+        margin-left: 38px;
+
+        span {
+            color: $second-color;
+        }
+    }
+
+    // &__data {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: end;
+
+    //     :nth-last-child(4) {
+    //         margin-bottom: 0px;
+    //         margin-right: 0px;
+    //     }
+
+    //     :nth-last-child(2) {
+    //         margin-bottom: 0px;
+    //         margin-right: 0px;
+    //     }
+
+    //     &_item {
+    //         width: 45%;
+    //         height: 44px;
+    //         border: 1px solid $main-color;
+    //         margin-right: 26px;
+    //         margin-bottom: 21px;
+    //     }
+    // }
+
+    // &__form {
+    //     padding-left: 40px;
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    // }
+
+    // &__message {
+    //     width: calc(100% - 60px);
+    //     height: 104px;
+    //     border: 1px solid #555555;
+    // }
+
+    // &__send {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: start;
+    // }
 }

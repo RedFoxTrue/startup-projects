@@ -677,20 +677,20 @@
             </div>
           </div>
         </div>
-        <div class="feedback__form">
+        <form class="feedback__form">
           <div class="feedback__data">
-            <input type="text" class="feedback__data_item" />
-            <input type="text" class="feedback__data_item" />
-            <input type="text" class="feedback__data_item" />
-            <input type="text" class="feedback__data_item" />
-            <input type="text" class="feedback__message" />
+            <input required name="name" placeholder="Your name" type="text" class="feedback__data_item" />
+            <input required name="email" placeholder="Your E-mail" type="email" class="feedback__data_item" />
+            <input required name="subject" placeholder="Your subject" type="text" class="feedback__data_item" />
+            <input required name="company" placeholder="Company name" type="text" class="feedback__data_item" />
+            <textarea class="feedback__message" placeholder="Write your message"></textarea>
           </div>
           <div class="feedback__send">
-            <button type="text" class="button button__send">Send message</button>
-            <span>* We’ll contact you as as possible. We don’t reply on
-              Monday.</span>
+            <input type="submit" value="Send message" class="button button__send" />
+            <div class="feedback__descr"> <span>*</span> We’ll contact you as as possible. We don’t reply on
+              Monday.</div>
           </div>
-        </div>
+        </form>
 
       </div>
     </div>

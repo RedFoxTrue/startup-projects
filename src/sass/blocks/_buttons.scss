@@ -37,6 +37,19 @@
         text-align: center;
         line-height: 38px;
     }
+
+    &__send {
+        width: 170px;
+        height: 44px;
+        border: 1px solid $main-color;
+        color: $main-color;
+        font-family: "Roboto Slab";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.6px;
+        border-radius: 0px;
+    }
 }
 
 .button_touch:hover {

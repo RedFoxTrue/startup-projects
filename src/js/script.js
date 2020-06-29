@@ -49,7 +49,7 @@ $(document).ready(function () {
         infinite: true,
         speed: 1500,
         autoplay: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
