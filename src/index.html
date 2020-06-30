@@ -679,19 +679,18 @@
         </div>
         <form class="feedback__form">
           <div class="feedback__data">
-            <input required name="name" placeholder="Your name" type="text" class="feedback__data_item" />
-            <input required name="email" placeholder="Your E-mail" type="email" class="feedback__data_item" />
-            <input required name="subject" placeholder="Your subject" type="text" class="feedback__data_item" />
-            <input required name="company" placeholder="Company name" type="text" class="feedback__data_item" />
+            <input name="name" placeholder="Your name" type="text" class="feedback__data_item" />
+            <input name="email" placeholder="Your E-mail" type="email" class="feedback__data_item" />
+            <input name="subject" placeholder="Your subject" type="text" class="feedback__data_item" />
+            <input name="company" placeholder="Company name" type="text" class="feedback__data_item" />
             <textarea class="feedback__message" placeholder="Write your message"></textarea>
           </div>
           <div class="feedback__send">
-            <input type="submit" value="Send message" class="button button__send" />
+            <button type="submit" class="button button__send">Send message</button>
             <div class="feedback__descr"> <span>*</span> We’ll contact you as as possible. We don’t reply on
               Monday.</div>
           </div>
         </form>
-
       </div>
     </div>
     </div>
@@ -715,6 +714,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

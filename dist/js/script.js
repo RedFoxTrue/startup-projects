@@ -107,4 +107,24 @@ $(document).ready(function () {
             .addClass('latest__tab_active').siblings().removeClass('latest__tab_active')
             .closest('div.container').find('div.latest__content').removeClass('latest__content_active').eq($(this).index()).addClass('latest__content_active');
     });
+
+    $('.feedback__form').validate({
+        errorClass: "invalid",
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            subject: "required",
+            company: "required"
+        },
+        messages: {
+            name: "Please specify your name",
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+        }
+    });
 });
