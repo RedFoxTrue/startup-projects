@@ -9,16 +9,16 @@
 </head>
 
 <body>
-  <section class="header">
+  <section id="up" class="header">
     <div class="header__promo">
       <nav class="menu">
         <div class="menu__logo"><a class="menu__logo__link" href="#">Startup</a></div>
         <ul class="menu__list">
-          <li><a class="menu__list__item" href="#">Home</a></li>
+          <li><a href="#home" class="menu__list__item" href="#">Home</a></li>
           <li><a class="menu__list__item" href="#">Services</a></li>
           <li><a class="menu__list__item" href="#">About</a></li>
           <li><a class="menu__list__item" href="#">Works</a></li>
-          <li><a class="menu__list__item" href="#">Blog</a></li>
+          <li><a href="#blog" class="menu__list__item" href="#">Blog</a></li>
           <li><a class="menu__list__item" href="#">Clients</a></li>
           <li><a class="menu__list__item" href="#">Contact</a></li>
         </ul>
@@ -500,7 +500,7 @@
       <button class="button button_touch">Get in Touch</button>
     </div>
   </section>
-  <section class="blog">
+  <section id="blog" class="blog">
     <div class="container">
       <h2 class="title">
         Recent blog posts
@@ -683,7 +683,7 @@
             <input name="email" placeholder="Your E-mail" type="email" class="feedback__data_item" />
             <input name="subject" placeholder="Your subject" type="text" class="feedback__data_item" />
             <input name="company" placeholder="Company name" type="text" class="feedback__data_item" />
-            <textarea class="feedback__message" placeholder="Write your message"></textarea>
+            <textarea name="message" class="feedback__message" placeholder="Write your message"></textarea>
           </div>
           <div class="feedback__send">
             <button type="submit" class="button button__send">Send message</button>
@@ -711,6 +711,11 @@
       </div>
     </div>
   </footer>
+
+  <a href="#up" class="pageup">
+    <img src="icons/circle-up.svg" alt="up">
+  </a>
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
