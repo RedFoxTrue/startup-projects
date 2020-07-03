@@ -1,0 +1,24 @@
+// удалить всю адаптацию и сохранить, что бы она выпала с потока и свойства новых блоков не перебивали её
+// заново вставить адаптацию и сохранить, что бы она записалась в самом конце style.min.css и смогла перебивать нужные свойста 
+@media (max-width: 1200px) {
+    .header {
+        .menu {
+            display: inline-block;
+
+            &__logo {
+                display: inline-block;
+            }
+
+            &__wrapper {
+                display: inline-block;
+            }
+        }
+
+
+    }
+}
+
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}

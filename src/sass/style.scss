@@ -18,6 +18,7 @@ body {
     }
 }
 
+
 @import 'base/_variables';
 @import 'libs/_font';
 @import 'libs/slick';
@@ -32,3 +33,4 @@ body {
 @import 'blocks/_feedback';
 @import 'blocks/_footer';
 @import 'blocks/pageup';
+@import 'base/_media.scss';
